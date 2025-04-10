@@ -25,25 +25,14 @@ extern "C" {
 #define NUM_ANALOG_INPUTS (6)
 #define NUM_ANALOG_OUTPUTS (0)
 
-// LEDs
-// #define PIN_LED1 (32 + 10) // Blue LED        P1.10   F LED2
-// #define PIN_LED2 (32 + 15) // Built in Green  P1.15   F LED1
 
-#define PIN_LED1 (0 + 6)  // Blue LED        P1.10   F LED2  IB LED1
-#define PIN_LED2 (0 + 12) // Built in Green  P1.15   F LED1  IB  D13
-
-// RGB NeoPixel LED2
-// #define PIN_LED1 (0 + 8) Red
-// #define PIN_LED1 (32 + 9) Green
-// #define PIN_LED1 (0 + 12) Blue
-
+// LED
+#define PIN_LED1 (0 + 06) // P0.06
 #define LED_BUILTIN PIN_LED1
-#define LED_CONN PIN_LED2
+// Actually red
+#define LED_BLUE PIN_LED1
+#define LED_STATE_ON 1 // State when LED is lit
 
-#define LED_GREEN PIN_LED1
-#define LED_BLUE PIN_LED2
-
-#define LED_STATE_ON 0 // State when LED is litted
 
 /*
  * Buttons
